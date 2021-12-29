@@ -6,12 +6,12 @@ library(readxl)
 library(stats)
 
 setwd("C:\\ChindwinHMS\\Draft\\Figures")
-allflows=read_excel("Allflowssimulated.xlsx", "Monywa")
+allflows=read_excel("Allflowssimulated.xlsx", "Hkamti")
 allflows=allflows[,-1]
 allflows=allflows[,c(2,1,3,4)]
 par(mar=c(2,2,2,0.1))
 par(family = "serif")
-vioplot(allflows, col=c("gray","cyan","orange","green"),main="Monywa")
+vioplot(allflows, col=c("gray","cyan","orange","green"),main="Hkamti")
 
 
 
